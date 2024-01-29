@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainForm</class>
+ <widget class="QWidget" name="MainForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>927</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit{
+	border:1px solid gray;border-radius:7px;padding:3px;
+}
+
+QPushButton#btn_menu{
+	background-image: url(:/image/btn_menu_normal.png);
+	border: 0px;
+}
+QPushButton#btn_menu:hover{
+	background-image: url(:/image/btn_menu_hover.png);
+	border: 0px;
+}
+QPushButton#btn_menu:checked{
+	background-image: url(:/image/btn_menu_hover.png);
+	border: 0px;
+}
+
+/*minBtn*/
+QPushButton#btn_min{
+	background-image: url(:/image/btn_min_normal.png);
+	border: 0px;
+}
+QPushButton#btn_min:hover{
+	background-image: url(:/image/btn_min_hover.png);
+	border: 0px;
+}
+QPushButton#btnmin:checked{
+	background-image: url(:/image/btn_min_hover.png);
+	border: 0px;
+}
+
+/*nomalBtn*/
+QPushButton#btn_max{
+	background-image: url(:/image/btn_max_normal.png);
+	border: 0px;
+}
+QPushButton#btn_max:hover{
+	background-image: url(:/image/btn_max_hover.png);
+	border: 0px;
+}
+QPushButton#btn_max:checked{
+	background-image: url(:/image/btn_max_hover.png);
+	border: 0px;
+}
+
+/*closeBtn*/
+QPushButton#btn_close{
+	background-image: url(:/image/btn_close_normal.png);
+	border: 0px;
+}
+QPushButton#btn_close:hover{
+	background-image: url(:/image/btn_close_hover.png);
+	border: 0px;
+}
+QPushButton#btn_close:checked{
+	background-image: url(:/image/btn_close_hover.png);
+	border: 0px;
+}
+
+QLabel#labVideo1,#labVideo2,#labVideo3,#labVideo4,#labVideo5,#labVideo6,#labVideo7,#labVideo8,#labVideo9,#labVideo10,#labVideo11,#labVideo12,#labVideo13,#labVideo14,#labVideo15,#labVideo16{
+	border-image: url(:/image/lab_normal.png);
+	color: rgb(255, 255, 255);
+	font: 25pt &quot;微软雅黑&quot;;
+}
+QLabel:hover#labVideo1,QLabel:hover#labVideo2,QLabel:hover#labVideo3,QLabel:hover#labVideo4,QLabel:hover#labVideo5,QLabel:hover#labVideo6,QLabel:hover#labVideo7,QLabel:hover#labVideo8,QLabel:hover#labVideo9,QLabel:hover#labVideo10,QLabel:hover#labVideo11,QLabel:hover#labVideo12,QLabel:hover#labVideo13,QLabel:hover#labVideo14,QLabel:hover#labVideo15,QLabel:hover#labVideo16{
+	border-image: url(:/image/lab_hover.png);
+}
+
+QPushButton#btnOpen,#btn1,#btn4,#btn9,#btn16{	
+	border: 0px;
+	padding: 4px;
+    min-width: 65px;
+    min-height: 20px;
+	color: rgb(255, 255, 255);
+	font: 10pt &quot;微软雅黑&quot;;
+	border-image: url(:/image/btn_normal.png);	
+}
+
+QPushButton:pressed#btnOpen,QPushButton:pressed#btn1,QPushButton:pressed#btn4,QPushButton:pressed#btn9,QPushButton:pressed#btn16{
+	border-image: url(:/image/btn_press.png);	
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1,0">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0,0,0,0">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_menu">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_min">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_max">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_close">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,0">
+     <item>
+      <layout class="QHBoxLayout" name="hlayout1" stretch="1,1,1">
+       <item>
+        <widget class="QLabel" name="labVideo1">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(43, 255, 43);</string>
+         </property>
+         <property name="text">
+          <string>视频1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labVideo2">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 241, 85);</string>
+         </property>
+         <property name="text">
+          <string>视频2</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labVideo3">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(115, 90, 255);</string>
+         </property>
+         <property name="text">
+          <string>视频3</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="hlayout2" stretch="1,1,1">
+       <item>
+        <widget class="QLabel" name="labVideo4">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 189, 155);</string>
+         </property>
+         <property name="text">
+          <string>视频4</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labVideo5">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(227, 255, 175);</string>
+         </property>
+         <property name="text">
+          <string>视频5</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labVideo6">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 111, 8);</string>
+         </property>
+         <property name="text">
+          <string>视频6</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="hlayout3" stretch="1,1,1">
+       <item>
+        <widget class="QLabel" name="labVideo7">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 55, 29);</string>
+         </property>
+         <property name="text">
+          <string>视频7</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labVideo8">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(110, 84, 255);</string>
+         </property>
+         <property name="text">
+          <string>视频8</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labVideo9">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 25, 28);</string>
+         </property>
+         <property name="text">
+          <string>视频9</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="text">
+          <string>开启人脸识别</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="text">
+          <string>开启车辆识别</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="text">
+          <string>打开视频</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="setonebtn">
+         <property name="text">
+          <string>1画面</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="setfourbtn">
+         <property name="text">
+          <string>4画面</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="setninebtn">
+         <property name="text">
+          <string>9画面</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="2,0,2,0,2,2">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_2"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="text">
+            <string>发送数据</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="text">
+            <string>连接服务器</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>断开服务器</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
